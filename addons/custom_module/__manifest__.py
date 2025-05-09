@@ -1,10 +1,9 @@
 {
-    'name': "First Custom Module",
-    'summary': "Dummy Module",
+    'name': "Custom Module",
+    'summary': "Not functional, just for testing purpose",
     'description': "This is a basic module, just for learning purpose.",
-    'author': "Aniket",
-    'website': "https://spyadav.odoo.com/",
-    'category': 'No category',
+    'author': "Aniket Singh",
+    'category': 'Uncategorized',
     'version': '1.0',
     'depends': ['base'],
     'data': [
@@ -15,5 +14,4 @@
         'demo/demo.xml',
     ],
     "application": True,
-    "installable": True,
 }
