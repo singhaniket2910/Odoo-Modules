@@ -18,7 +18,6 @@ services:
   db:
     image: postgres:latest
     container_name: postgresql-17
-    restart: always
     ports:
       - "5432:5432"
     environment:
