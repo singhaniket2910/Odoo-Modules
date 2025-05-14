@@ -1,5 +1,5 @@
 <odoo>
-    <record id='first_order_tree_custom' model='ir.ui.view'>
+    <!-- <record id='first_order_tree_custom' model='ir.ui.view'>
         <field name='name'>first.order.tree.custom</field>
         <field name='model'>custom.module</field>
         <field name='arch' type='xml'>
@@ -11,7 +11,7 @@
                 <field name='name5'/>
             </tree>
         </field>
-    </record>
+    </record> -->
 
     <record id='first_order_from_custom' model='ir.ui.view'>
         <field name='name'>first.order.tree.custom</field>
@@ -32,7 +32,7 @@
     <record id='action_custom_model' model='ir.actions.act_window'>
         <field name='name'>Custom Module</field>
         <field name='res_model'>custom.module</field>
-        <field name='view_mode'>tree,form</field>
+        <field name='view_mode'>form</field>
         <field name='target'>current</field>
         <field name='help' type='html'>
             <p>Create and manage your custom models here.</p>
@@ -41,5 +41,5 @@
 
     <menuitem id='menu_custom_module_root_menu' name='Custom Module'/>
     <menuitem id='menu_custom_module_sub_root_menu' name='Name list' parent='menu_custom_module_root_menu'/>
-    <menuitem id='menu_custom_module_menu' name='List' parent='menu_custom_module_sub_root_menu'/>
+    <menuitem id='menu_custom_module_menu' name='List' parent='menu_custom_module_sub_root_menu' action="action_custom_model"/>
 </odoo>
