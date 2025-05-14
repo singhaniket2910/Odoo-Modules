@@ -2,13 +2,13 @@ name: odoo-dev
 services:
   odoo:
     image: odoo:latest
-    container_name: odoo-18
+    container_name: odoo-container
     depends_on:
       - db
     ports:
       - "8069:8069"
     volumes:
-      - odoo-web-data:/var/lib/odoo
+      - odoo-data:/var/lib/odoo
       - ./addons:/mnt/extra-addons
     environment:
       - HOST=db
@@ -17,7 +17,7 @@ services:
 
   db:
     image: postgres:latest
-    container_name: postgresql-17
+    container_name: postgres-container
     ports:
       - "5432:5432"
     environment:
@@ -25,8 +25,8 @@ services:
       - POSTGRES_USER=odoo
       - POSTGRES_PASSWORD=odoo
     volumes:
-      - odoo-db-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data
 
 volumes:
-  odoo-web-data:
-  odoo-db-data:
+  odoo-data:
+  postgres-data:

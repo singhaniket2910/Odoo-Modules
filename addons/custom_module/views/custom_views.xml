@@ -1,29 +1,26 @@
 <odoo>
-    <!-- <record id='first_order_tree_custom' model='ir.ui.view'>
-        <field name='name'>first.order.tree.custom</field>
+    <record id='view_order_list_custom' model='ir.ui.view'>
+        <field name='name'>first.order.list.custom</field>
         <field name='model'>custom.module</field>
+        <field name="type">list</field>
         <field name='arch' type='xml'>
-            <tree string='Sales Orders'>
-                <field name='name1'/>
-                <field name='name2'/>
-                <field name='name3'/>
-                <field name='name4'/>
-                <field name='name5'/>
-            </tree>
+            <list string='Sales Orders'>
+                <field name='name'/>
+                <field name='age'/>
+                <field name='gender'/>
+            </list>
         </field>
-    </record> -->
+    </record>
 
-    <record id='first_order_from_custom' model='ir.ui.view'>
-        <field name='name'>first.order.tree.custom</field>
+    <record id='view_order_form_custom' model='ir.ui.view'>
+        <field name='name'>first.order.form.custom</field>
         <field name='model'>custom.module</field>
         <field name='arch' type='xml'>
-            <form string='Sales Orders' sample='1'>
+            <form string='Sales Orders'>
                 <group>
-                    <field name='name1'/>
-                    <field name='name2'/>
-                    <field name='name3'/>
-                    <field name='name4'/>
-                    <field name='name5'/>
+                    <field name='name'/>
+                    <field name='age'/>
+                    <field name='gender'/>
                 </group>
             </form>
         </field>
@@ -32,7 +29,7 @@
     <record id='action_custom_model' model='ir.actions.act_window'>
         <field name='name'>Custom Module</field>
         <field name='res_model'>custom.module</field>
-        <field name='view_mode'>form</field>
+        <field name='view_mode'>list,form</field>
         <field name='target'>current</field>
         <field name='help' type='html'>
             <p>Create and manage your custom models here.</p>
@@ -40,6 +37,6 @@
     </record>
 
     <menuitem id='menu_custom_module_root_menu' name='Custom Module'/>
-    <menuitem id='menu_custom_module_sub_root_menu' name='Name list' parent='menu_custom_module_root_menu'/>
-    <menuitem id='menu_custom_module_menu' name='List' parent='menu_custom_module_sub_root_menu' action="action_custom_model"/>
+    <menuitem id='menu_custom_module_sub_root_menu' name='Name List' parent='menu_custom_module_root_menu'
+              action="action_custom_model"/>
 </odoo>
