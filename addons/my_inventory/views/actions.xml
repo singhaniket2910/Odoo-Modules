@@ -1,0 +1,100 @@
+<odoo>
+    <!--Main menu-->
+    <record id="overview" model="ir.actions.act_window">
+        <field name='name'>Overview</field>
+        <field name='res_model'>inventory.module</field>
+    </record>
+
+    <!--Sub-menus for Operations-->
+    <record id="receipts" model="ir.actions.act_window">
+        <field name='name'>Receipts</field>
+        <field name='res_model'>inventory.module</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <h2>No receipt found. Let's create one!</h2>
+            <h5>Receipts allow you to get products from a partner.</h5>
+        </field>
+    </record>
+    <!--    <record id="deliveries" model="ir.actions.act_window">-->
+    <!--        <field name='name'>Deliveries</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="inventory" model="ir.actions.act_window">-->
+    <!--        <field name='name'>inventory</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="scrap" model="ir.actions.act_window">-->
+    <!--        <field name='name'>scrap</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="replenishment" model="ir.actions.act_window">-->
+    <!--        <field name='name'>replenishment</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="procurement" model="ir.actions.act_window">-->
+    <!--        <field name='name'>procurement</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+
+    <!--Sub-menus for Products-->
+    <!--    <record id="products" model="ir.actions.act_window">-->
+    <!--        <field name='name'>products</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="product_variants" model="ir.actions.act_window">-->
+    <!--        <field name='name'>product_variants</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="lots_serial_numbers" model="ir.actions.act_window">-->
+    <!--        <field name='name'>lots_serial_numbers</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+
+    <!--Sub-menus for Reporting-->
+    <!--    <record id="stock" model="ir.actions.act_window">-->
+    <!--        <field name='name'>stock</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="locations" model="ir.actions.act_window">-->
+    <!--        <field name='name'>locations</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="history" model="ir.actions.act_window">-->
+    <!--        <field name='name'>history</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="analysis" model="ir.actions.act_window">-->
+    <!--        <field name='name'>analysis</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="valuation" model="ir.actions.act_window">-->
+    <!--        <field name='name'>valuation</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+
+    <!--Sub-menus for Configuration-->
+    <!--    <record id="settings" model="ir.actions.act_window">-->
+    <!--        <field name='name'>settings</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="warehouses" model="ir.actions.act_window">-->
+    <!--        <field name='name'>warehouses</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="operations_types" model="ir.actions.act_window">-->
+    <!--        <field name='name'>operations_types</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="product_categories" model="ir.actions.act_window">-->
+    <!--        <field name='name'>product_categories</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="attributes" model="ir.actions.act_window">-->
+    <!--        <field name='name'>attributes</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+    <!--    <record id="barcode" model="ir.actions.act_window">-->
+    <!--        <field name='name'>barcode</field>-->
+    <!--        <field name='res_model'>inventory.module</field>-->
+    <!--    </record>-->
+</odoo>

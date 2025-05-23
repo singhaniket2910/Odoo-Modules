@@ -2,13 +2,13 @@
     <record id='view_order_list_custom' model='ir.ui.view'>
         <field name='name'>first.order.list.custom</field>
         <field name='model'>custom.module</field>
-        <field name="type">list</field>
+        <field name="type">tree</field>
         <field name='arch' type='xml'>
-            <list string='Sales Orders'>
+            <tree string='Sales Orders'>
                 <field name='name'/>
                 <field name='age'/>
                 <field name='gender'/>
-            </list>
+            </tree>
         </field>
     </record>
 

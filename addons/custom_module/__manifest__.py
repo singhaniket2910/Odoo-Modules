@@ -1,8 +1,8 @@
 # noinspection PyStatementEffect
 {
-    'name': "Custom Module",
-    'summary': "Not functional, just for testing purpose",
-    'sequence': 1,
+    'name': "MyModule",
+    'summary': "Just for learning purpose",
+    'sequence': 2,
     'description': "This is a basic module, just for learning purpose.",
     'author': "Aniket",
     'category': 'MyModules',

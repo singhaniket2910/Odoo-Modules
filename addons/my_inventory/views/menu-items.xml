@@ -1,0 +1,62 @@
+<odoo>
+    <menuitem id='root_menu' name='My Inventory'/>
+
+    <!--Main menu-->
+    <menuitem id='module_subroot_overview' name='Overview' parent='root_menu' action='overview'/>
+    <menuitem id='module_subroot_operations' name='Operations' parent='root_menu'/>
+    <menuitem id='module_subroot_products' name='Products' parent='root_menu'/>
+    <menuitem id='module_subroot_reporting' name='Reporting' parent='root_menu'/>
+    <menuitem id='module_subroot_configuration' name='Configuration' parent='root_menu'/>
+
+    <!--Sub-menus for Operations-->
+    <menuitem id="operations_subroot_receipts" name="Receipts" parent="module_subroot_operations" action="receipts"/>
+    <!--    <menuitem id="operations_subroot_deliveries" name="Deliveries" parent="module_subroot_operations"-->
+    <!--              action="deliveries"/>-->
+    <!--    <menuitem id="operations_subroot_inventory" name="Physical Inventory"-->
+    <!--              parent="module_subroot_operations"-->
+    <!--              action="inventory"/>-->
+    <!--    <menuitem id="operations_subroot_scrap" name="Scrap" parent="module_subroot_operations"-->
+    <!--              action="scrap"/>-->
+    <!--    <menuitem id="operations_subroot_replenishment" name="Replenishment" parent="module_subroot_operations"-->
+    <!--              action="replenishment"/>-->
+    <!--    <menuitem id="operations_subroot_procurement" name="Procurement: run scheduler"-->
+    <!--              parent="module_subroot_operations"-->
+    <!--              action="procurement"/>-->
+
+    <!--Sub-menus for Products-->
+    <!--    <menuitem id='products_subroot_products' name='Products' parent='module_subroot_products'-->
+    <!--              action="products"/>-->
+    <!--    <menuitem id='products_subroot_variants' name='Product Variants' parent='module_subroot_products'-->
+    <!--              action="product_variants"/>-->
+    <!--    <menuitem id='products_subroot_lots_serial_numbers' name='Lots / Serial Numbers'-->
+    <!--              parent='module_subroot_products'-->
+    <!--              action="lots_serial_numbers"/>-->
+
+    <!--Sub-menus for Reporting-->
+    <!--    <menuitem id='reporting_subroot_stock' name='Stock' parent='module_subroot_reporting' action="stock"/>-->
+    <!--    <menuitem id='reporting_subroot_locations' name='Locations' parent='module_subroot_reporting'-->
+    <!--              action="locations"/>-->
+    <!--    <menuitem id='reporting_subroot_history' name='Moves History' parent='module_subroot_reporting'-->
+    <!--              action="history"/>-->
+    <!--    <menuitem id='reporting_subroot_analysis' name='Moves Analysis' parent='module_subroot_reporting'-->
+    <!--              action="analysis"/>-->
+    <!--    <menuitem id='reporting_subroot_valuation' name='Valuation' parent='module_subroot_reporting'-->
+    <!--              action="valuation"/>-->
+
+    <!--Sub-menus for Configuration-->
+    <!--    <menuitem id="configuration_subroot_settings" name="Settings" parent="module_subroot_configuration"-->
+    <!--              action="settings"/>-->
+    <!--    <menuitem id="configuration_subroot_warehouses" name="Warehouses" parent="module_subroot_configuration"-->
+    <!--              action="warehouses"/>-->
+    <!--    <menuitem id="configuration_subroot_operations_types" name="Operations Types"-->
+    <!--              parent="module_subroot_configuration"-->
+    <!--              action="operations_types"/>-->
+    <!--    <menuitem id="configuration_subroot_product_categories" name="Product Categories"-->
+    <!--              parent="module_subroot_configuration"-->
+    <!--              action="product_categories"/>-->
+    <!--    <menuitem id="configuration_subroot_attributes" name="Attributes" parent="module_subroot_configuration"-->
+    <!--              action="attributes"/>-->
+    <!--    <menuitem id="configuration_subroot_barcode" name="Barcode Nomenclature"-->
+    <!--              parent="module_subroot_configuration"-->
+    <!--              action="barcode"/>-->
+</odoo>
