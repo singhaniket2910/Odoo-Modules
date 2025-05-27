@@ -21,8 +21,8 @@
         <field name='arch' type='xml'>
             <form>
                 <group>
-                    <field name='reference'/>
-                    <field name='contact'/>
+                    <field name='sender'/>
+                    <field name='operation_type'/>
                     <field name='schedule_date'/>
                     <field name='source_doc'/>
                     <field name='company'/>

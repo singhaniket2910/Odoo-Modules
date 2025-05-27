@@ -10,10 +10,25 @@ class Inventory(models.Model):
     schedule_date = fields.Date(string='Scheduled Date')
     source_doc = fields.Char(string='Source Document')
     company = fields.Char(string='Company')
-    status = fields.Selection([
-        ('draft', 'Draft'),
-        ('waiting', 'Waiting'),
-        ('ready', 'Ready'),
-        ('done', 'Done'),
-        ('cancelled', 'Cancelled'),
-    ], string='Status')
+    status = fields.Selection(
+        selection=[
+            ('draft', 'Draft'),
+            ('waiting', 'Waiting'),
+            ('ready', 'Ready'),
+            ('done', 'Done'),
+            ('cancelled', 'Cancelled'),
+        ],
+        string='Status',
+    )
+    sender = fields.Many2one(
+        'res.partner',
+        string='Receive From',
+        domain="[('is_company', '=', False)]",
+    )
+    deadline = fields.Date(string='Deadline')
+    source_document = fields.Char(string='Source Document')
+    operation_type = fields.Many2one(
+        'stock.picking.type',
+        string='Operation Type',
+        domain=[('code', 'in', ('incoming','outgoing'))],
+    )
