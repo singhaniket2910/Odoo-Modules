@@ -9,7 +9,7 @@
     <record id="receipts" model="ir.actions.act_window">
         <field name='name'>Receipts</field>
         <field name='res_model'>inventory.module</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
         <field name="help" type="html">
             <h2>No receipt found. Let's create one!</h2>
             <h5>Receipts allow you to get products from a partner.</h5>

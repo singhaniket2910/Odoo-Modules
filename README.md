@@ -1,3 +1,3 @@
 # Odoo-Modules
 
-### This repo contains all the customs modules created on Odoo 17 and PostgreSQL 15
+### This repo contains customs modules created on Odoo 18 and Postgres 17

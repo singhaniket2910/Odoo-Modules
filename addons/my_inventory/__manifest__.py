@@ -9,12 +9,12 @@
     'version': '1.0',
     'depends': [
         'base',
+        'stock',
     ],
     'data': [
         'security/ir.model.access.csv',
         'views/actions.xml',
         'views/menu-items.xml',
-        # 'views/templates.xml',
         'views/views.xml',
     ],
     "application": True,

@@ -30,5 +30,4 @@ class Inventory(models.Model):
     operation_type = fields.Many2one(
         'stock.picking.type',
         string='Operation Type',
-        domain=[('code', 'in', ('incoming','outgoing'))],
     )

@@ -2,16 +2,16 @@
     <record id='custom_list' model='ir.ui.view'>
         <field name='name'>inventory.module.tree.custom</field>
         <field name='model'>inventory.module</field>
-        <field name="type">tree</field>
+        <field name="type">list</field>
         <field name='arch' type='xml'>
-            <tree>
+            <list>
                 <field name='reference'/>
                 <field name='contact'/>
                 <field name='schedule_date'/>
                 <field name='source_doc'/>
                 <field name='company'/>
                 <field name='status'/>
-            </tree>
+            </list>
         </field>
     </record>
 

@@ -1,8 +1,8 @@
 name: odoo-dev
 services:
   odoo:
-    image: odoo:17
-    container_name: odoo-container
+    image: odoo:latest
+    container_name: odoo
     depends_on:
       - db
     ports:
@@ -17,8 +17,8 @@ services:
       - ./addons:/mnt/extra-addons
 
   db:
-    image: postgres:15
-    container_name: postgres-container
+    image: postgres:latest
+    container_name: postgres
     ports:
       - "5432:5432"
     environment:
